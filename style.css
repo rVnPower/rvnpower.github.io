@@ -6,7 +6,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Segoe UI", Arial;
+    font-family: Monaco,  "Segoe UI", Arial;
     font-size: 18px;
 
     display: flex;
@@ -17,6 +17,11 @@ body {
   body {
       font-size: 14px;
   }
+}
+
+p, li {
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 a {
@@ -43,6 +48,7 @@ ul {
     align-items: center;
 
     background: #3B4253;
+    border-bottom: 3px solid #0081c2;
 }
 
 @media screen and (max-width: 600px) {
@@ -84,10 +90,6 @@ ul {
   .introduction {
       font-size: 20px;
   }
-}
-
-.introduction li {
-    padding: 10px;
 }
 
 .header {
