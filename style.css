@@ -6,7 +6,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: Monaco,  "Segoe UI", Arial;
+    font-family: "Bitstream Vera Sans Mono", "Lucida Console", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
@@ -19,10 +19,22 @@ body {
   }
 }
 
+h1, h2 {
+  padding-bottom: 11px;
+  padding-top: 11px;
+}
+
 p, li {
   padding-bottom: 5px;
   padding-top: 5px;
 }
+
+h1 { font-size:1.75em; }
+h2 { font-size:1.5em; }
+h3 { font-size:1.17em; }
+h4 { font-size:1.00em; }
+h5 { font-size:0.83em; }
+h6 { font-size:0.67em; }
 
 a {
     text-decoration: none;
@@ -32,6 +44,11 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+section {
+  margin: 20px;
+  font-size: 20px;
 }
 
 .container {
@@ -113,7 +130,7 @@ ul {
     height: 300px;
 
     position: relative;
-    left: 40px;
+    left: 90px;
 }
 
 @media screen and (max-width: 600px) {
@@ -121,6 +138,6 @@ ul {
       width: 150px;
       height: 150px;
 
-      left: 90px;
+      left: 140px;
   }
 }
