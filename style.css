@@ -1,0 +1,124 @@
+body {
+    top: 0;
+    margin: 0;
+
+    height: inherit;
+
+    background-color: #10111B;
+    color: #F8FCFB;
+    font-family: "Segoe UI", Arial;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: #F8FCFB;
+    color: #F8FCFB;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+}
+
+.navbar {
+    width: 100%;
+    height: 4vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+
+    background: #3B4253;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: 100%;
+  }
+}
+
+.navbar-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.navbar-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.introsection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    height: 93vh;
+}
+
+@media screen and (max-width: 600px) {
+  .introsection {
+      display: box;
+  }
+}
+
+.introduction {
+    font-size: 1.44rem;
+}
+
+@media screen and (max-width: 600px) {
+  .introduction {
+      font-size: 20px;
+  }
+}
+
+.introduction li {
+    padding: 10px;
+}
+
+.header {
+    font-size: 2.22rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 32px;
+    }
+}
+
+.profile {
+    border: 10px solid #404B5D;
+
+    border-radius: 50%;
+
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+      width: 150px;
+      height: 150px;
+
+      left: 90px;
+  }
+}
