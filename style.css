@@ -11,6 +11,8 @@ body {
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +69,7 @@ section {
 
 .home {
   width: 90%;
+  height: calc(96vh - 25px);
 
   display: inline-flex;
   flex-direction: column;
@@ -75,7 +78,7 @@ section {
 }
 
 .navbar {
-    width: 100%;
+    width: 90%;
     height: 4vh;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -114,13 +117,13 @@ section {
     align-items: center;
     justify-content: center;
     flex-flow: row nowrap;
-    height: 35vh;
+    height: 25vh;
 }
 
 @media screen and (max-width: 600px) {
   .introsection {
       display: box;
-      height: 30vh;
+      height: 20vh;
   }
 }
 
@@ -164,4 +167,21 @@ section {
       width: 175px;
       height: 175px;
   }
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-card {
+  width: 95%;
+  background: #101118;
+  padding: 10px;
+}
+
+.no-padding {
+  padding: 0
 }
