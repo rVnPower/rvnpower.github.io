@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/bitstream-vera-sans-mono');
+
 body {
     top: 0;
     margin: 0;
@@ -6,7 +8,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Bitstream Vera Sans Mono", "Lucida Console", "Segoe UI" , monospace;
+    font-family: "Bitstream Vera Sans Mono", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
