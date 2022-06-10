@@ -1,3 +1,6 @@
 # Template (avoiding boredom)
 subtemplate.html
 template.html
+
+# Gitpod config file
+.gitpod.yml

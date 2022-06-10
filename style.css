@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/bitstream-vera-sans-mono?styles=83');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
 
 body {
     top: 0;
@@ -8,7 +8,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Bitstream Vera Sans Mono", "Segoe UI" , monospace;
+    font-family: "Bitstream Vera Sans Mono", "Fira Mono", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
