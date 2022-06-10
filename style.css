@@ -151,10 +151,6 @@ section {
     }
 }
 
-.profile-area {
-  margin: 60px;
-}
-
 .profile {
     border: 10px solid #404B5D;
 
@@ -182,6 +178,18 @@ section {
   width: 95%;
   background: #101118;
   padding: 10px;
+}
+
+.unmaintained {
+  border: 1px solid #888;
+}
+
+.maintained {
+  border: 1px solid #117711;
+}
+
+.completed {
+  border: 1px solid #5d0faa;
 }
 
 .no-padding {
