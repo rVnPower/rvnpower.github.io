@@ -70,13 +70,12 @@ section {
 }
 
 .home {
-  width: 90%;
   height: calc(96vh - 25px);
 
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+
 }
 
 .navbar {
@@ -99,7 +98,17 @@ section {
 
   .navbar {
     width: 100%;
+  }
 }
+
+@media screen and (max-height: 600px) {
+  .home {
+    height: 600px;
+  }
+
+  .navbar {
+    height: 30px;
+  }
 }
 
 .navbar-list {
@@ -118,7 +127,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     height: 25vh;
 }
 
