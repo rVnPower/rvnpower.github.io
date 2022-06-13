@@ -8,7 +8,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Bitstream Vera Sans Mono", "Fira Mono", "Segoe UI" , monospace;
+    font-family: "Mono", "Bitstream Vera Sans Mono", "Fira Mono", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
@@ -65,12 +65,24 @@ section {
   font-size: 20px;
 }
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
 .container {
     width: 90%;
 }
 
 .home {
-  height: calc(96vh - 25px);
+  height: calc(95vh - 25px);
 
   display: flex;
   flex-direction: column;
@@ -80,12 +92,13 @@ section {
 
 .navbar {
     width: 90%;
-    height: 4vh;
+    height: 5vh;
     padding-top: 10px;
     padding-bottom: 10px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 
     background: #3B4253;
     border-bottom: 3px solid #0081c2;
@@ -98,6 +111,7 @@ section {
 
   .navbar {
     width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -117,11 +131,10 @@ section {
 }
 
 .navbar-link {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
     color: #F8FCFB;
 }
-
 
 .introsection {
     display: flex;
