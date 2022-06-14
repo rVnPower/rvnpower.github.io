@@ -65,7 +65,7 @@ section {
   font-size: 20px;
 }
 
-.blink_me {
+.blink-me {
   animation: blinker 1s linear infinite;
 }
 
@@ -165,6 +165,11 @@ section {
     font-size: 2.22rem;
     text-align: center;
     font-weight: bold;
+}
+
+.pin {
+  width: 121px;
+  height: 31px;
 }
 
 @media screen and (max-width: 600px) {
