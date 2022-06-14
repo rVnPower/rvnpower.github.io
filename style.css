@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url("https://code.cdn.mozilla.net/fonts/fira.css");
 
 body {
     top: 0;
@@ -8,7 +8,7 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Mono", "Bitstream Vera Sans Mono", "Fira Mono", "Segoe UI" , monospace;
+    font-family: "Fira Mono", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
