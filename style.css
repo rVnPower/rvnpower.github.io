@@ -1,4 +1,5 @@
 @import url("https://code.cdn.mozilla.net/fonts/fira.css");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
 body {
     top: 0;
@@ -8,13 +9,31 @@ body {
 
     background-color: #10111B;
     color: #F8FCFB;
-    font-family: "Fira Mono", "Segoe UI" , monospace;
+    font-family: 'JetBrains Mono', "Fira Mono", "Segoe UI" , monospace;
     font-size: 18px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #333 #1D1D1D;   /* scroll thumb and track */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1D1D1D;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #1D1D1D;  /* creates padding around scroll thumb */
+}
 }
 
 @media screen and (max-width: 600px) {
