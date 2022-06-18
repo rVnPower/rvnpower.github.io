@@ -69,6 +69,10 @@ h4 { font-size:1.00em; }
 h5 { font-size:0.83em; }
 h6 { font-size:0.67em; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+}
+
 a {
     text-decoration: none;
     text-decoration-color: #318fea;
@@ -263,4 +267,10 @@ section {
 
 .no-padding {
   padding: 0
+}
+
+.preface {
+  background-color: #000d1a;
+  padding: 10px;
+  border: 2px solid #001a33;
 }
