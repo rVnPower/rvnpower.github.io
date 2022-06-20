@@ -1,5 +1,4 @@
-@import url("https://code.cdn.mozilla.net/fonts/fira.css");
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url("./assets/font/font.css");
 
 body {
     top: 0;
@@ -248,7 +247,7 @@ section {
 }
 
 .project-card {
-  width: 95%;
+  width: 100%;
   background: #101118;
   padding: 10px;
 }
@@ -269,8 +268,18 @@ section {
   padding: 0
 }
 
-.preface {
+.bold-section {
   background-color: #000d1a;
   padding: 10px;
   border: 2px solid #001a33;
+}
+
+.table-of-contents {
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .table-of-contents {
+    width: 95%;
+  }
 }
