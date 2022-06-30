@@ -13,7 +13,13 @@ body {
     background-color: #10111B;
     color: #fff;
     font-family: 'Source Sans Pro', 'JetBrains Mono', "Segoe UI" , sans-serif;
-    font-size: 18px;
+    font-size: 22px;
+
+    background-image: url("../assets/lone.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,12 +33,12 @@ a {
 }
 
 .container {
-  width: 95vw;
+  width: 98vw;
+  margin-top: 20px; /* stay away from the top of the page */
   flex-direction: column;
 }
 
 header {
-  margin-top: 20px; /* stay away from the top of the page */
   padding: 15px;
   width: 110%;
   background-color: #17192a;
@@ -59,7 +65,7 @@ nav {
 }
 
 .nav-item:hover {
-  background-color: #1a223640;
+  background-color: #1a2236;
   box-shadow: 0 0 10px 5px #1a1e2b;
 }
 
@@ -69,12 +75,56 @@ nav {
 
 main {
   background-color: #121321;
-  width: 80%;
-  height: 80vh;
+  width: 75%;
   border-radius: 40px;
+  border: 3px solid #111;
+  border-top: none;
 
   z-index: 0;
-  flex-direction: column;
+}
+
+/* Real body */
+.deco {
+  aspect-ratio: 1600/150;
+  width: 100%;
+}
+
+section {
+  width: 90%;
+}
+
+.introduction {
+  margin: 30px;
+  width: 75%;
+  gap: 50px;
+  height: min-content;
+}
+
+.profile {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+  padding: 20px;
+}
+
+.profile .border {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  border: 2px dashed #777;
+  border-radius: 50%;
+
+  animation: rotate 60s linear 0;
+  animation-iteration-count: infinite;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: inherit;
+  box-shadow: 0 0 5px 10px #333333aa;
 }
 
 .blink {
@@ -86,4 +136,13 @@ main {
     49% { opacity: 1; }
     50% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
