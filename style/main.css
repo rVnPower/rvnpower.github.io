@@ -9,6 +9,8 @@ body {
     margin: 0;
 
     height: inherit;
+    min-height: 100vh;
+    position: relative;
 
     background-color: #10111B;
     color: #fff;
@@ -34,8 +36,11 @@ a {
 
 .container {
   width: 98vw;
+  height: auto;
   margin-top: 20px; /* stay away from the top of the page */
   flex-direction: column;
+
+  gap: 70px;
 }
 
 header {
@@ -125,6 +130,24 @@ section {
   border-radius: 50%;
   width: inherit;
   box-shadow: 0 0 5px 10px #333333aa;
+}
+
+/* footer */
+footer {
+  width: 80%;
+  padding: 10px;
+  background-color: #17192a;
+  border: 3px solid #111;
+  border-bottom: none;
+  border-radius: 30px 30px 0 0;
+
+  position: absolute;
+  bottom: 0;
+}
+
+footer h2 {
+  font-size: 1.6em;
+  margin: 0.3em 0;
 }
 
 .blink {
