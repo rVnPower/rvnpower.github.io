@@ -1,0 +1,89 @@
+@import url("./assets/font/font.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@import url("./scrollbar.css");
+@import url("./components.css");
+
+body {
+    top: 0;
+    margin: 0;
+
+    height: inherit;
+
+    background-color: #10111B;
+    color: #fff;
+    font-family: 'Source Sans Pro', 'JetBrains Mono', "Segoe UI" , sans-serif;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Mono", monospace;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 95vw;
+  flex-direction: column;
+}
+
+header {
+  margin-top: 20px; /* stay away from the top of the page */
+  padding: 15px;
+  width: 110%;
+  background-color: #17192a;
+
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+  z-index: 1;
+
+  box-shadow: 0 2px 5px 0 #111;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  font-size: 1.8rem;
+  padding: .5rem .75rem;
+  border-radius: 30px;
+
+  transition: all .1s linear;
+}
+
+.nav-item:hover {
+  background-color: #1a223640;
+  box-shadow: 0 0 10px 5px #1a1e2b;
+}
+
+.nav-item:target {
+  background-color: #1a2236;
+}
+
+main {
+  background-color: #121321;
+  width: 80%;
+  height: 80vh;
+  border-radius: 40px;
+
+  z-index: 0;
+  flex-direction: column;
+}
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    0% { opacity: 1; }
+    49% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 0; }
+}

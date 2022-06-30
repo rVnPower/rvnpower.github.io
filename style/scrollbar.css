@@ -1,0 +1,18 @@
+body {
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: #333 #1D1D1D;   /* scroll thumb and track */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #1D1D1D;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #1D1D1D;  /* creates padding around scroll thumb */
+}
