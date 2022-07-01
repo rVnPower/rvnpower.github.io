@@ -3,52 +3,56 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link href="./style/main.css" rel="stylesheet" type="text/css" media="all">
         <title>Home - VnPower</title>
     </head>
-    <body>
-        <div class="navbar">
-            <div>
-                <a href="index.html" class="navbar-link" style="font-weight: bold; font-size: 22px">
-                    >VnPower<span class="blink-me">_</span>
-                </a>
+    <body class="h-center-flex col">
+      <div class="container h-center-flex">
+        <main class="h-center-flex col">
+          <header class="d-center-flex">
+            <a href="index.html"><h1>>rVnPower_</h1></a>
+            <nav>
+              <a href="#">
+                <div class="nav-item">
+                  /home
+                </div>
+              </a>
+              <a href="#">
+                <div class="nav-item">
+                  /about
+                </div>
+              </a>
+              <a href="#">
+                <div class="nav-item">
+                  /projects
+                </div>
+              </a>
+              <a href="#">
+                <div class="nav-item">
+                  /misc
+                </div>
+              </a>
+            </nav>        
+          </header>
+            <img class="deco" src="./assets/test.svg" alt="">
+          <section class="d-center-flex">
+            <div class="introduction flex">
+              <div class="profile f-center-flex">
+                <div class="border"></div>
+                <img src="./assets/pf.png" alt="">
+              </div>
+              <div class="d-center-flex f-width col">
+                <h1>rVnPower</h1>
+                <p>He is a Linux user. He loves penguins and rice.</p>
+              </div>
             </div>
-            <div class="navbar-list">
-                <a class="navbar-link" href="about.html">about</a>
-                <a class="navbar-link" href="projects.html">projects</a>
-                <a class="navbar-link" href="blog/index.html">blog</a>
-                <a class="navbar-link" href="misc/index.html">misc</a>
-            </div>
-        </div>
-        <div class="home container">
-            <div class="introsection">
-                <p class="header"><img src="assets/pf.png" alt="VnPower" class="profile"/></p>
-                <div class="flex tech-section">
-                    <div class="tech">
-                        <img src="assets/linux.svg" alt="Linux" width="50" height="50" style="tech-icon"/>
-                        <small>Linux</small>
-                    </div>
-                    <div class="tech">
-                        <img src="assets/git.svg" alt="Git" width="50" height="50" style="tech-icon"/>
-                        <small>Git</small>
-                    </div>
-                    <div class="tech">
-                        <img src="assets/html.svg" alt="HTML" width="50" height="50" style="tech-icon"/>
-                        <small>Web</small>
-                    </div>
-                    <div class="tech">
-                        <img src="assets/python.svg" alt="Python" width="50" height="50" style="tech-icon"/>
-                        <small>Python</small>
-                    </div>
-                    <div class="tech">
-                        <img src="assets/rust.svg" alt="Rust" width="50" height="50" style="tech-icon"/>
-                        <small>Rust</small>
-                    </div>
-                </div><br>
-
-                <small>To people who told my website sucks: go make one yourself with pure HTML and CSS then dm me</small>
-                <noscript>NoScript gang. :sunglasses:</noscript>
-            </div>
-        </div>
+          </section>
+        </main>
+      </div>
+        <footer class="f-center-flex col">
+          <h2>bottom text.</h2>
+          <p>©rVnPower | 2022</p>
+          <img src="./assets/bottom-deco.svg" class="deco"> 
+        </footer>
     </body>
 </html>

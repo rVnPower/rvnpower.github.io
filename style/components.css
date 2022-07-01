@@ -1,0 +1,34 @@
+/* flex */
+
+.flex {
+  display: flex;
+}
+
+.d-center-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.h-center-flex {
+  display: flex;
+  align-items: center;
+}
+
+.f-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divided-flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+/* width */
+.f-width {
+  width: 100%;
+}
