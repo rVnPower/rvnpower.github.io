@@ -10,8 +10,7 @@ body {
 
     height: auto;
     min-height: 100vh;
-    gap: 50px;
-    justify-content: space-between;
+    gap: 20px;
 
     background-color: #10111B;
     color: #fff;
@@ -37,7 +36,7 @@ a {
 
 .container {
   width: 98vw;
-  height: auto;
+  height: inherit;
   margin-top: 20px; /* stay away from the top of the page */
   flex-direction: column;
 
@@ -64,19 +63,22 @@ nav {
 
 .nav-item {
   font-size: 1.8rem;
-  padding: .5rem .75rem;
+  padding: .6rem .75rem;
   border-radius: 30px;
+  box-shadow: 0 0 4px 3px #11111111;
 
-  transition: all .1s linear;
+  transition: box-shadow .4s ease-out, background-color .2s linear;
 }
 
 .nav-item:hover {
-  background-color: #1a2236;
-  box-shadow: 0 0 10px 5px #1a1e2b;
+  background-color: #1c1f3d;
+  box-shadow: 0 0 10px 5px #1a1e2b44;
 }
 
-.nav-item:target {
-  background-color: #1a2236;
+.nav-item:active {
+  background-color: #202447;
+  box-shadow: 0 0 3px 3px #3f5384;
+  opacity: 0.9;
 }
 
 main {
@@ -123,31 +125,31 @@ section {
   border: 2px dashed #777;
   border-radius: 50%;
 
-  animation: rotate 60s linear 0;
+  animation: rotate 120s linear 0;
   animation-iteration-count: infinite;
 }
 
 .profile img {
   border-radius: 50%;
   width: inherit;
-  box-shadow: 0 0 5px 10px #333333aa;
+  box-shadow: 0 0 5px 7px #333333aa;
+  transition: all .5s ease-out;
+}
+
+.profile:hover img {
+  box-shadow: 0 0 5px 9px #444444aa;
 }
 
 /* footer */
 footer {
-  width: 80%;
+  width: 20%;
   background-color: #17192a;
   border: 3px solid #111;
-  border-bottom: none;
-  border-radius: 30px 30px 0 0;
-}
+  border-radius: 30px;
+  font-size: 1.1em;
+  padding: 20px 40px;
 
-footer h2 {
-  font-size: 1.6em;
-  margin: 0.3em 0;
-}
-
-footer .deco {
+  margin: 20px;
 }
 
 .blink {
