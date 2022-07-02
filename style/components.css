@@ -4,12 +4,6 @@
   display: flex;
 }
 
-@media screen and (orientation: portrait) {
-  .flex {
-    flex-direction: column;
-  }
-}
-
 .d-center-flex {
   display: flex;
   justify-content: center;

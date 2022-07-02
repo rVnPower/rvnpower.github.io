@@ -136,9 +136,16 @@ section {
 
 .introduction {
   margin: 30px;
-  width: 75%;
-  gap: 50px;
+  width: 65%;
+  gap: 80px;
   height: min-content;
+}
+
+@media screen and (orientation: portrait) {
+  .introduction {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .profile {
