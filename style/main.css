@@ -187,6 +187,50 @@ section {
     height: 150px;
   }
 }
+
+/* projects */
+.projects {
+  width: 95%;
+  padding: 40px 0;
+  margin: 40px 0;
+
+  justify-content: space-evenly;
+  align-items: space-evenly;
+}
+
+.project-card {
+  width: 40%;
+  height: 50vh;
+  background: #17192a;
+  border: 2px solid #111;
+  border-radius: 30px;
+  
+  position: relative;
+}
+
+.pl-logo {
+  position: absolute; 
+  top: -25px;
+  left: -25px;
+
+  background-color: #1c1f3b;
+  border-radius: 30px;
+  box-shadow: 5px 5px 2px 0 #00000040;
+  width: 180px;
+  height: 180px;
+}
+
+@media screen and (orientation: portrait) {
+  .projects {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .project-card {
+    width: 70%;
+  }
+}
+
 /* footer */
 footer {
   width: 30%;
