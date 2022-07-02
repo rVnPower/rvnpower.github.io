@@ -82,7 +82,7 @@ nav {
   background-color: #1c1f3d;
   box-shadow: 0 0 10px 5px #1a1e2b44;
 }
-uncle roger egg fried rice
+
 .nav-item:active {
   background-color: #202447;
   box-shadow: 0 0 3px 3px #3f5384;
@@ -126,6 +126,9 @@ section {
 }
 
 @media screen and (orientation: portrait) {
+  main {
+    width: 90%;
+  }
   section {
     text-align: center;
   }
@@ -190,6 +193,9 @@ footer {
 }
 
 @media screen and (orientation: portrait) {
+  footer {
+    width: 50%;
+  }
   .webring {
     width: 121px;
   }
