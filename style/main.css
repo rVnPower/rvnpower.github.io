@@ -200,12 +200,32 @@ section {
 
 .project-card {
   width: 40%;
-  height: 50vh;
+  height: auto;
+  min-height: 50vh;
   background: #17192a;
   border: 2px solid #111;
   border-radius: 30px;
   
   position: relative;
+}
+
+.project-content {
+  margin-top: 1em;
+  width: 90%;
+}
+
+.project {
+  background-color: #1c1f3b;
+  border: 2px solid #111;
+  width: min-content;
+  height: auto;
+  padding: 5px 10px;
+
+  margin: 1px;
+}
+
+.project:hover {
+  transform: rotate(3deg);
 }
 
 .pl-logo {
@@ -218,6 +238,17 @@ section {
   box-shadow: 5px 5px 2px 0 #00000040;
   width: 180px;
   height: 180px;
+  transition: all .5s ease-out;
+}
+
+.pl-logo:hover {
+  box-shadow: 5px 5px 2px 1px #11111140;
+}
+
+.pl-title {
+  width: 60%;
+  height: 155px;
+  align-self: flex-end;
 }
 
 @media screen and (orientation: portrait) {
