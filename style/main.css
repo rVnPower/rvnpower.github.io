@@ -3,6 +3,7 @@
 
 @import url("./scrollbar.css");
 @import url("./components.css");
+@import url("./logo.css");
 
 body {
   top: 0;
@@ -202,9 +203,10 @@ section {
   width: 40%;
   height: auto;
   min-height: 50vh;
-  background: linear-gradient(to bottom right, #17192a 40%, #242849);
+  background: linear-gradient(to bottom right, #242849 10%, #17192a);
   border: 2px solid #111;
   border-radius: 30px;
+  padding: 10px 0;
   
   position: relative;
 }
@@ -217,6 +219,7 @@ section {
 .project {
   background-color: #1c1f3b;
   border: 2px solid #111;
+  border-radius: 10px;
   width: min-content;
   height: auto;
   padding: 5px 10px;
@@ -233,7 +236,7 @@ section {
   top: -25px;
   left: -25px;
 
-  background-color: #1c1f3b;
+  background: linear-gradient(to bottom right, #1c1f3b 40%, #242849);
   border-radius: 30px;
   box-shadow: 5px 5px 2px 0 #00000040;
   width: 180px;
@@ -258,7 +261,14 @@ section {
   }
 
   .project-card {
-    width: 70%;
+    width: 80%;
+  }
+
+  .pl-logo {
+    box-shadow: none;
+    width: 90px;
+    height: 90px;
+    background: none;
   }
 }
 

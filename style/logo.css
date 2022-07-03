@@ -1,0 +1,72 @@
+:root {
+  --defaultW: 120px;
+  --defaultH: 120px;
+}
+
+.python {
+  width: var(--defaultW);
+  height: var(--defaultH);
+}
+
+.linux {
+  width: calc(var(--defaultW) - 10px);
+  height: calc(var(--defaultH) + 10px);
+}
+
+.rust {
+  width: calc(var(--defaultW) + 50px);
+  height: calc(var(--defaultH) - 10px);
+}
+
+.svelte {
+  width: calc(var(--defaultW) - 20px);
+  height: var(--defaultH);
+}
+
+.python:hover {
+
+  animation: easeOutBounce .5s;
+}
+
+@keyframes easeOutBounce {
+	0% {
+		transform: translateY(0%);
+	}
+
+	12% {
+		transform: translateY(-10.89%);
+	}
+
+	24% {
+		transform: translateY(-43.56%);
+	}
+
+	36% {
+		transform: translateY(-98.01%);
+	}
+
+	54% {
+		transform: translateY(-75.02%);
+	}
+
+	74% {
+		transform: translateY(-98.37%);
+	}
+
+	82% {
+		transform: translateY(-93.75%);
+	}
+
+	92% {
+		transform: translateY(-99.34%);
+	}
+
+	96% {
+		transform: translateY(-98.46%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+
+}
