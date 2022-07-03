@@ -202,7 +202,7 @@ section {
   width: 40%;
   height: auto;
   min-height: 50vh;
-  background: #17192a;
+  background: linear-gradient(to bottom right, #17192a 40%, #242849);
   border: 2px solid #111;
   border-radius: 30px;
   
