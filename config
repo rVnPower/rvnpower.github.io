@@ -1,0 +1,37 @@
+TEMPLATES = site.tmpl
+SOURCE = src
+OUTPUT = www
+TITLE = VnPower
+URL = http://6qiatzlijtqo6giwvuhex5zgg3czzwrq5g6yick3stnn4xekw26zf7qd.onion
+AUTHOR = VnPower
+
+blog/**/*.md:
+	config
+	ext .html
+	directorify
+	tags tags/*.tag
+	markdown chroma=emacs
+	inner-template
+	template post
+	template page
+
+*.tag: blog/**/*.md
+	ext .html
+	directorify
+	template tag
+	template page
+
+blog.atom: blog/**/*.md
+	inner-template
+
+index.html: blog/**/*.md
+	config
+	inner-template
+	template page
+
+*/index.md:
+	config
+	ext .html
+	directorify
+	markdown chroma=emacs
+	template page

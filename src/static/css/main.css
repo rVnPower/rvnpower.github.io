@@ -1,0 +1,119 @@
+@import url("/static/font/font.css"); /* load the fonts */
+/* variables */
+:root {
+  /* Nord colorscheme */
+  --nord1: #2E3440;
+  --nord2: #3B4252;
+  --nord3: #434C5E;
+  --nord4: #4C566A;
+  --nord5: #D8DEE9;
+  --nord6: #E5E9F0;
+  --nord7: #ECEFF4;
+  --nord10: #81A1C1;
+  --nord11: #5E81AC;
+}
+/* default values */
+* {
+  box-sizing: border-box; 
+  text-rendering: geometricPrecision;
+}
+a {
+  text-decoration: none;
+  color: var(--nord10);
+}
+a:hover {
+  background: var(--nord11);
+  color: var(--nord7);
+}
+hr {
+  background: var(--nord5);
+  margin: 1.8em 0;
+}
+/* this part is complicated */
+h4 {
+  overflow: hidden;
+  position: relative;
+  display: table-cell;
+  padding: 20px 0;
+}
+h4::after {
+  content: "====================================================================================================";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  color: var(--nord7);
+}
+/* main components */
+body {
+  margin: 0;
+  background: var(--nord1);
+  color: var(--nord7);
+  font-size: 16px;
+  font-family: "Roboto Mono", "JetBrains Mono", monospace;
+  word-wrap: break-word;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 65%;
+  min-width: 800px;
+}
+main {
+  line-height: 1.4em;
+}
+/* navbar components */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+nav {
+  display: flex;
+  column-gap: 22px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--nord5);
+}
+nav a:hover {
+  background: none;
+  color: var(--nord7);
+}
+header .flash {
+  animation: flash 1s;
+  animation-iteration-count: infinite;
+  width: 5px;
+  height: 12px;
+}
+/* content-related components */
+.post {
+  padding: 1.4em 0;
+  display: flex;
+}
+
+.preface {
+  padding: 0.5em;
+  margin: 0.75em 0;
+  border: 2px solid var(--nord3);
+  background: var(--nord4);
+}
+
+section .date {
+  width: 14%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items:end;
+}
+section .content {
+  width: 86%;
+}
+/* keyframes for animations */
+@keyframes flash {
+  0% { background: none; }
+  49% { background: var(--nord11); }
+  50% { background: var(--nord11); }
+  100% { background: none; }
+}
