@@ -2,7 +2,7 @@ title: It's done.
 author:  VnPower
 date: 2022-06-12
 preface: It's finally done.
-tags: website
+tags: public, website
 ----
 
 # So...

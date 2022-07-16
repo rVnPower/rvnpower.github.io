@@ -1,4 +1,4 @@
-{{ define "header" }}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,9 +20,25 @@
         </nav>
       </header>
       <main>
-{{ end }}
 
-{{ define "footer" }}
+<h4>It's done.</h4>
+
+      <div class="info">
+        Tags:
+        
+        <a href="/tags/public/">public</a>,
+        <a href="/tags/website/">website</a>
+      </div>
+      <div class="preface">
+        It's finally done.
+      </div>
+      <h1 id="so">So&hellip;</h1>
+<p>it&rsquo;s done.</p>
+<p>I spent too much time redesigning my personal website. I just have to add some content now.</p>
+<p>Big shoutout to TechnicalSuwako and Wrongthink. Their personal websites are available at the bottom of
+the page.</p>
+    
+
       </main>
       <hr>
       <footer>
@@ -37,37 +53,3 @@
     </div> 
   </body>
 </html>
-{{ end }}
-
-{{ define "page" }}{{ template "header" . }}
-<h4>{{ .Title }}</h4>
-{{ .Content }}{{ template "footer" . }}{{ end }}
-
-{{ define "date" }}{{ .Format "2006/01/02" }}{{ end }}
-
-{{ define "pagelist" }}{{ range . }}    
-<section class="post">
-  <div class="date">
-    {{ template "date" .Date }}
-  </div>
-  <div class="content">
-    <h4><a href="/{{ .Url }}">{{ .Title }}</a></h4>
-    {{ .Other.Preface }}
-  </div>
-</section>
-{{ end }}{{ end }}
-
-{{ define "post" }}
-      <div class="info">
-        Tags:
-        {{ range $i, $t := .Tags }}{{ if $i }},{{ end }}
-        <a href="/tags/{{ $t }}/">{{ $t }}</a>{{ end }}
-      </div>
-      <div class="preface">
-        {{ .Other.Preface }}
-      </div>
-      {{ .Content }}    
-{{ end }}
-
-{{ define "tag" }}    <h1>`{{ .Title }}` tagged post(s)</h1>
-{{ template "pagelist" .Site.Pages.WithTag .Title }}{{ end }}

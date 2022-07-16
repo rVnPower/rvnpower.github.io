@@ -1,4 +1,4 @@
-{{ define "header" }}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,9 +20,21 @@
         </nav>
       </header>
       <main>
-{{ end }}
 
-{{ define "footer" }}
+<h4>Home</h4>
+A Vietnamese student who likes to dive deep. <a href="/about">(more)</a>
+    
+<section class="post">
+  <div class="date">
+    2022/06/12
+  </div>
+  <div class="content">
+    <h4><a href="/blog/finally/">It's done.</a></h4>
+    It's finally done.
+  </div>
+</section>
+
+
       </main>
       <hr>
       <footer>
@@ -37,37 +49,3 @@
     </div> 
   </body>
 </html>
-{{ end }}
-
-{{ define "page" }}{{ template "header" . }}
-<h4>{{ .Title }}</h4>
-{{ .Content }}{{ template "footer" . }}{{ end }}
-
-{{ define "date" }}{{ .Format "2006/01/02" }}{{ end }}
-
-{{ define "pagelist" }}{{ range . }}    
-<section class="post">
-  <div class="date">
-    {{ template "date" .Date }}
-  </div>
-  <div class="content">
-    <h4><a href="/{{ .Url }}">{{ .Title }}</a></h4>
-    {{ .Other.Preface }}
-  </div>
-</section>
-{{ end }}{{ end }}
-
-{{ define "post" }}
-      <div class="info">
-        Tags:
-        {{ range $i, $t := .Tags }}{{ if $i }},{{ end }}
-        <a href="/tags/{{ $t }}/">{{ $t }}</a>{{ end }}
-      </div>
-      <div class="preface">
-        {{ .Other.Preface }}
-      </div>
-      {{ .Content }}    
-{{ end }}
-
-{{ define "tag" }}    <h1>`{{ .Title }}` tagged post(s)</h1>
-{{ template "pagelist" .Site.Pages.WithTag .Title }}{{ end }}
