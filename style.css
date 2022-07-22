@@ -59,6 +59,7 @@ img {
     bottom: 0px;
     height: 100px;
     width: 100%;
+    z-index: 999;
 }
 
 .nav-wrap > nav {
@@ -96,6 +97,10 @@ img {
 }
 
 /* intro */
+.intro {
+    text-align: center;
+}
+
 .intro h1 {
     margin: 10px 0;
 }
@@ -104,6 +109,7 @@ img {
 .content {
     background: var(--crust);
     width: 100%;
+    z-index: 2;
 }
 
 .content > section {
@@ -111,7 +117,100 @@ img {
     gap: 15%;
 }
 
+.content > .preview-projects {
+   gap: 9%;
+}
+
+.project {
+    transition: all 0.3s ease-out;
+}
+
+.project:hover {
+    transform: translateY(-3px);
+}
+
+.preview-projects > .wrapper {
+    width: 28%;
+    height: 250px;
+    background: var(--mantle);
+    padding: 10px;
+    border-radius: 20px;
+    gap: 7px;
+    position: relative;
+    box-shadow: 0 0 10px 10px #00000020;
+}
+
+.preview-projects > .wrapper > .project {
+    background: #292c3c;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.preview-projects > .wrapper > .project > .front {
+    justify-content: space-between;
+    margin: 0 20px;
+    gap: 20px;
+}
+
+.preview-projects > .wrapper > .project > .desc {
+    margin: 0 20px; 
+    text-overflow: ellipsis;
+}
+
+.preview-projects > .wrapper > .project > .front > .info {
+    text-align: right;
+}
+
+.preview-projects > .wrapper > .project > .front > .info > p {
+    margin: 5px 0;
+}
+
+.service-info {
+    padding: 0.4em 0.5em;
+    width: 200px;
+    background: var(--mantle);
+    border-radius: 0 20px 20px 0;
+    transform: translateX(-3px);
+}
+
+.service-logo {
+    background: var(--surface1);
+    padding: 0.9em;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 10px #00000020;
+    z-index: 3;
+}
+
+.service-logo > img {
+    width: 60px;
+}
+
+.service-logo,
+.service-logo > img,
+.service-logo > .service-name {
+    transition: all 0.3s ease-out;
+}
+
+.service-logo:hover {
+    box-shadow: 0 0 15px 13px #00000030;
+}
+
+.service-logo:hover > img {
+    transform: translateY(-10px);
+}
+
+.service-logo:hover > .service-name {
+    transform: translateY(-37px);
+}
+
 /* components */
+
+.flex {
+    display: flex;
+}
 
 .center-flex {
     display: flex;
@@ -133,29 +232,81 @@ img {
     flex-direction: column;
 }
 
-.right-content {
+.row-reverse {
     flex-direction: row-reverse;
+}
+
+.more-gap {
+    gap: 35%;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.tags {
+    gap: 3px;
+}
+
+.tags > div {
+    font-size: 12px;
+}
+
+.overflow-gradient {
+    background: linear-gradient(to top, #000000ee, 70%, transparent);
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+
+.completed-tag::after {
+    content: "Completed";
+    text-decoration: underline;
+    text-decoration-color: var(--green);
+}
+
+.wip-tag::after {
+    content: "WIP";
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+
+.unmaintained-tag::after {
+    content: "Unmaintained";
+    text-decoration: underline;
+    text-decoration-color: var(--peach);
+}
+
+.archived-tag::after {
+    content: "Archived";
+    text-decoration: underline;
+    text-decoration-color: var(--subtext2);
 }
 
 .beam::after {
     content: "▎";
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: blink 1s infinite linear;
 }
 
 .block::after {
     content: "▉";
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: blink 1s infinite linear;
 }
 
 .underline::after {
     content: "▁";
-    animation-name: blink;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation: blink 1s infinite linear;
+}
+
+.waving {
+    transform: rotate(10deg);
+    animation: wave 1.5s infinite ease-in-out;
 }
 
 /* keyframes */
@@ -171,5 +322,76 @@ img {
     }
     100% {
 	visibility: visible;
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(10deg);
+    }
+    15% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(10deg);
+    }
+    45% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    100% {
+	transform: rotate(10deg);
+    }
+}
+
+@media screen and (orientation: portrait) {
+    img {
+	width: 120px;
+    }
+
+    .flex,
+    .align-center,
+    .justify-center,
+    .row-reverse, 
+    .center-flex {
+	flex-direction: column;
+    }
+
+    .nav-wrap > nav {
+	flex-direction: row;
+	gap: 5px;
+    }
+
+    .profile {
+	width: 200px ;
+    }
+
+    .content > section {
+	height: 90vh;
+    }
+
+    .beam,
+    .block,
+    .underline {
+	display: none;
+    }
+
+    .preview-projects > .wrapper {
+	width: 80%;
+    }
+
+    .preview-projects > .wrapper > .project {
+	padding: 5px 0;
+    }
+
+    .preview-projects > .wrapper > .project > .front {
+	display: block;
+	text-align: center;
+    }
+
+    .preview-projects > .wrapper > .project > .front > .info {
+	text-align: center;
     }
 }
