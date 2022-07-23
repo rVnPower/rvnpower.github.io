@@ -59,7 +59,7 @@ img {
     bottom: 0px;
     height: 100px;
     width: 100%;
-    z-index: 999;
+    z-index: 1000;
 }
 
 .nav-wrap > nav {
@@ -121,6 +121,11 @@ img {
    gap: 9%;
 }
 
+.section-content {
+    width: 30%;
+    text-align: center;
+}
+
 .project {
     transition: all 0.3s ease-out;
 }
@@ -170,7 +175,8 @@ img {
     width: 200px;
     background: var(--mantle);
     border-radius: 0 20px 20px 0;
-    transform: translateX(-3px);
+    transform: translateX(-5px);
+    text-align: center;
 }
 
 .service-logo {
@@ -206,6 +212,10 @@ img {
     transform: translateY(-37px);
 }
 
+footer {
+    margin: 0 60px;
+}
+
 /* components */
 
 .flex {
@@ -234,6 +244,10 @@ img {
 
 .row-reverse {
     flex-direction: row-reverse;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .more-gap {
@@ -370,6 +384,14 @@ img {
 
     .content > section {
 	height: 90vh;
+    }
+
+    .section-content {
+	width: 90%;
+    }
+
+    .service-info {
+	border-radius: 20px;
     }
 
     .beam,
