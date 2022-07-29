@@ -46,7 +46,8 @@
 	}
 
 	.col {
-	    width: 33%;
+	    width: 380px;
+      gap: 7px;
 	}
 </style>
 
@@ -67,6 +68,15 @@
 			desc: "\
 			A customizable and minimal new tab.\
 			This is my first project in Svelte btw",
+			pl: ["Svelte", "JavaScript"],
+			tags: ["completed"],
+			link: "git.076.ne.jp/VnPower/bnt"
+		},
+		{
+			name: "dotfiles",
+			desc: "\
+			My Linux desktop configuration, just \
+			to make myself comfortable, ft. Nackoneko",
 			pl: ["Svelte", "JavaScript"],
 			tags: ["completed"],
 			link: "git.076.ne.jp/VnPower/bnt"
