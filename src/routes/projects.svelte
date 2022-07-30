@@ -94,7 +94,7 @@
 	}
 </script>
 
-<header class="center-flex">
+<header class="center-flex full-height">
 	<h1>Projects</h1>	
 </header>
 <section class="align-center column">

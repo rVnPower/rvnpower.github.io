@@ -18,7 +18,7 @@ export const load = async ({ fetch }) => {
   <h1>Blog</h1>
 </header>
 
-<section>
+<section class="wrapper column align-center">
     {#each posts as post}
       <h2>
         <a href={post.path}>
@@ -28,3 +28,9 @@ export const load = async ({ fetch }) => {
       Published {post.meta.date}
     {/each}
 </section>
+
+<style>
+  .wrapper {
+    width: 100%;
+  }
+</style>

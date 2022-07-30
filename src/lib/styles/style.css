@@ -42,7 +42,7 @@ ul {
 }
 
 header {
-    height: 100vh;
+    height: 85vh;
     gap: 40px;
     z-index: 0;
     background: linear-gradient(130deg, #303446, 30%, var(--base));
@@ -148,6 +148,10 @@ footer {
     position: absolute;
     bottom: 0;
     z-index: 999;
+}
+
+.full-height {
+  height: 100vh;
 }
 
 .completed-tag::after {

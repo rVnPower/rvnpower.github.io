@@ -141,7 +141,7 @@
 </script>
 
 
-	<header class="center-flex column">
+	<header class="center-flex column full-height">
 		<img src="pf.png" alt="My profile picture" class="profile"/>
 		<div class="align-center column intro">
 			<h1>VnPower</h1>
