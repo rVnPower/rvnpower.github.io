@@ -53,8 +53,12 @@ img {
 }
 
 a {
-    color: var(--text);
+    color: var(--rosewater);
     text-decoration: none;
+}
+
+small {
+  color: var(--subtext1);
 }
 
 /* intro */
@@ -64,6 +68,10 @@ a {
 
 .intro h1 {
     margin: 10px 0;
+}
+.title {
+  font-size: 1.6em;
+  margin: 0.6em 0;
 }
 
 /* content */
